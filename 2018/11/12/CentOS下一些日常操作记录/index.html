@@ -1,0 +1,308 @@
+
+
+<!DOCTYPE html>
+<html lang="">
+<head prefix="og: http://ogp.me/ns#"><meta name="generator" content="Hexo 3.8.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="Java后端开发，会点前端">
+    <title>CentOS下一些日常操作记录 | 太年轻的博客</title>
+
+    <!-- Open Graph -->
+    <meta name="description" content="&amp;#x5B89;&amp;#x88C5;&amp;#x5404;&amp;#x79CD;&amp;#x73AF;&amp;#x5883;    OpenJDK8&amp;#xFF1A;-y install java-1.8.0-openjdk```  123452. MySQL&amp;#xFF1A;CentOS&amp;#x9ED8;&amp;#x8BA4;&amp;#x8F6F;&amp;#x4EF6;&amp;#x5217;&amp;#x8868;&amp;#x4E2D;&amp;#x79FB;&amp;#x966">
+<meta name="keywords" content="Blog|Java|C#|MySQL|Redis|前端|JavaScript|">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CentOS下一些日常操作记录">
+<meta property="og:url" content="http://newcoder.club/2018/11/12/CentOS下一些日常操作记录/index.html">
+<meta property="og:site_name" content="太年轻的博客">
+<meta property="og:description" content="&amp;#x5B89;&amp;#x88C5;&amp;#x5404;&amp;#x79CD;&amp;#x73AF;&amp;#x5883;    OpenJDK8&amp;#xFF1A;-y install java-1.8.0-openjdk```  123452. MySQL&amp;#xFF1A;CentOS&amp;#x9ED8;&amp;#x8BA4;&amp;#x8F6F;&amp;#x4EF6;&amp;#x5217;&amp;#x8868;&amp;#x4E2D;&amp;#x79FB;&amp;#x966">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-11-12T14:36:47.825Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CentOS下一些日常操作记录">
+<meta name="twitter:description" content="&amp;#x5B89;&amp;#x88C5;&amp;#x5404;&amp;#x79CD;&amp;#x73AF;&amp;#x5883;    OpenJDK8&amp;#xFF1A;-y install java-1.8.0-openjdk```  123452. MySQL&amp;#xFF1A;CentOS&amp;#x9ED8;&amp;#x8BA4;&amp;#x8F6F;&amp;#x4EF6;&amp;#x5217;&amp;#x8868;&amp;#x4E2D;&amp;#x79FB;&amp;#x966">
+
+    <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "email": "mailto:",
+  "image": "",
+  "name": "",
+  "url": "http://newcoder.club"
+}
+</script>
+    <script>
+    var algoliaEnabled = false;
+    
+        var algolia = {
+            'applicationID': 'NNQYK1GONN',
+            'apiKey': '9f59925a894856e67adf51edbfcc3655',
+            'indexName': 'blog'
+        };
+        algoliaEnabled = true;
+    
+</script>
+
+    
+
+    
+    
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    
+    
+    
+        <!-- stylesheets list from config.yml -->
+        
+        <link rel="stylesheet" href="/css/aloha.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/magnific-popup.js/1.1.0/magnific-popup.min.css">
+        
+    
+
+</head>
+<body id="body" style="margin-bottom: 0;" class="pushable">
+
+    <div class="ui top fixed menu">
+        <a class="item" id="menu-icon"><i class="sidebar icon"></i></a>
+    </div>
+
+    <div id="menu-sidebar" class="ui left vertical sidebar menu">
+
+    <div id="sidebar-top">
+        <div class="content">
+            <h3>太年轻的博客</h3>
+        </div>
+    </div>
+    <div class="ui container sidebar-card">
+    <div class="ui people shape content">
+        <div class="active side">
+            <div class="ui card">
+                <div class="image">
+                    <img class="ui medium bordered image" src="/images/avatar.jpg">
+                </div>
+                <div class="content">
+                    <a class="header"></a>
+                    
+                        <div class="meta">
+                            码农 / Java / 头发很多的那种
+                        </div>
+                    
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+                        <div class="item">
+                            <i class="marker icon" style="float: left"></i>
+                            <div class="content">QingDao</div>
+                        </div>
+                        
+                        
+                    </div>
+
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+
+                                <a href="https://github.com/Slaughter96"><i class="large github icon" style="float: left"></i></a>
+
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+    
+    
+
+    
+
+    
+    <a href="/index.html" class="item">
+        <i class="home icon"></i>
+        HOME
+    </a>
+
+    
+
+    
+
+    <div class="ui search item">
+        <div class="ui transparent icon input">
+            <input id="search-input" type="text" placeholder="Search">
+            <i class="search link icon"></i>
+        </div>
+    </div>
+
+    
+</div>
+
+    <div class="pusher body-content">
+        <div id="content" class="ui main container">
+            <!--<div class="ui one column grid">-->
+                <!--<div class="column">-->
+                    <!--<div class="ui main container">-->
+                        <div id="post-CentOS下一些日常操作记录" class="ui main container article-type-post">
+
+    
+
+    <div class="ui divided grid">
+
+        <div class="two column row" id="article-content">
+
+            <div class="thirteen wide computer thirteen wide tablet sixteen wide mobile column">
+                
+
+<h1 class="ui header">
+    
+    CentOS下一些日常操作记录
+</h1>
+
+
+
+                <div class="article-inner">
+
+                    <div class="article-entry" itemprop="articleBody">
+                        
+                        <ul class="ui list">
+<li><p>&#x5B89;&#x88C5;&#x5404;&#x79CD;&#x73AF;&#x5883;  </p>
+<ol>
+<li><p>OpenJDK8&#xFF1A;<figure class="highlight plain"><figcaption><span>-y install java-1.8.0-openjdk```  </span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">2. MySQL&#xFF1A;CentOS&#x9ED8;&#x8BA4;&#x8F6F;&#x4EF6;&#x5217;&#x8868;&#x4E2D;&#x79FB;&#x9664;&#x4E86;MySQL&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x5148;&#x53BB;[&#x5B98;&#x7F51;](https://dev.mysql.com/downloads/repo/yum/) &#x4E0B;&#x4E2A;rpm&#x5305;  </span><br><span class="line">```wget xxx```  </span><br><span class="line">```rpm -ivh xxxxx.rpm```  </span><br><span class="line">```yum update```  </span><br><span class="line">```yum install mysql-server</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><figcaption><span>--initialize```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">```systemctl start mysqld```  </span><br><span class="line">&#x7ED3;&#x679C;&#x542F;&#x52A8;&#x670D;&#x52A1;&#x7684;&#x65F6;&#x5019;&#x62A5;&#x9519;&#xFF1A;&lt;b&gt;Job for mysqld.service failed because the control process exited with error code. See &quot;systemctl status mysqld.service&quot; and &quot;journalctl -xe&quot; for details.&lt;/b&gt;  </span><br><span class="line">&#x6839;&#x636E;&#x63D0;&#x793A;&#x770B;&#x4E86;&#x4E0B;&#x9519;&#x8BEF; ```Error: 2 (No such file or directory)```&#xFF0C;&#x8FD8;&#x662F;&#x770B;&#x65E5;&#x5FD7;&#x5427;&#xFF0C;&#x4E00;&#x822C;&#x65E5;&#x5FD7;&#x5728; /var/log &#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x62A5;&#x9519;&#x5982;&#x4E0B;&#xFF1A;</span><br></pre></td></tr></table></figure>
+<p> 2018-11-12T13:13:00.297733Z 1 [ERROR] [MY-012271] [InnoDB] The innodb_system data file &#x2018;ibdata1&#x2019; must be writable<br> 2018-11-12T13:13:00.297766Z 1 [ERROR] [MY-012278] [InnoDB] The innodb_system data file &#x2018;ibdata1&#x2019; must be writable<br> 2018-11-12T13:13:00.297787Z 1 [ERROR] [MY-010334] [Server] Failed to initialize DD Storage Engine<br> 2018-11-12T13:13:00.297904Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.<br> 2018-11-12T13:13:00.297929Z 0 [ERROR] [MY-010119] [Server] Aborting<br> <code>&#x770B;&#x6765;&#x662F;&#x6743;&#x9650;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x4FEE;&#x6539;&#x4E00;&#x4E0B;mysql&#x4E0B;&#x7684;&#x6743;&#x9650;</code>chmod -R 777 /var/lib/mysql<code>`</code>&#xFF0C;&#x91CD;&#x65B0;&#x542F;&#x52A8;&#xFF0C;&#x6B63;&#x5E38;&#x4E86;~  </p>
+</li>
+<li><p>&#x5B89;&#x88C5;Nginx&#xFF1A; <code>yum -y install nginx</code> &#xFF0C;&#x540C;&#x7406;&#x542F;&#x52A8;&#x76F8;&#x5E94;&#x670D;&#x52A1;&#xFF1A; <code>systemctl start nginx.service</code><br>PS&#xFF1A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6240;&#x5728;&#x76EE;&#x5F55;&#xFF1A; <code>/etc/nginx/nginx.conf</code> </p>
+</li>
+<li>&#x5B89;&#x88C5;Redis&#xFF08;&#x540C;Nginx&#xFF09;</li>
+</ol>
+</li>
+<li>Linux(CentOS)&#x547D;&#x4EE4;&#x89E3;&#x6790;  <ol>
+<li>systemctl&#xFF1A;  <a href="http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html" target="_blank" rel="noopener">Systemd &#x5165;&#x95E8;&#x6559;&#x7A0B;&#xFF1A;&#x547D;&#x4EE4;&#x7BC7;&#x2014;&#x2014;&#x962E;&#x4E00;&#x5CF0;&#x7684;&#x535A;&#x5BA2;</a></li>
+<li>chmod&#xFF1A;<a href="https://www.ibm.com/support/knowledgecenter/zh/ssw_aix_71/com.ibm.aix.cmds1/chmod.htm" target="_blank" rel="noopener">Linux chmod&#x547D;&#x4EE4;</a></li>
+</ol>
+</li>
+</ul>
+<h2 id="&#x5F85;&#x7EED;"><a href="#&#x5F85;&#x7EED;" class="headerlink" title="&#x5F85;&#x7EED;"></a>&#x5F85;&#x7EED;</h2>
+                        
+                    </div>
+
+                    
+                    
+                    
+
+                    <div class="description post-description">
+    <span class="post-description-item">
+        <time datetime="2018-11-12T12:17:52.000Z" itemprop="datePublished">2018-11-12</time>
+
+    </span>
+    <span class="post-description-item">
+        
+    </span>
+</div>
+
+                </div>
+                
+                <div id="pagination" class="nav-web ui text container pagination">
+
+    <div class="ui stackable two column divided grid container">
+        <div class="row">
+            <div class="column nav-left">
+                
+
+                <a class="ui tiny button disabled"><i class="angle left icon"></i>Previous</a>
+
+                
+            </div>
+            <div class="column nav-right">
+                
+
+                <a href="/2018/11/10/分布式理论入门整理/" class="ui tiny button">
+                    
+                    分布式理论入门整理
+                    
+                    <i class="angle right icon"></i></a>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+                
+            </div>
+
+            
+            <div class="three wide computer three wide tablet column">
+
+                <div class="ui sticky article-toc" id="article-toc">
+                    <!-- toc -->
+                    <ol class="ui ordered list"><li><a href="#待续"><span>待续</span></a></li></ol>
+                </div>
+
+            </div>
+            
+
+        </div>
+    </div>
+</div>
+
+
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+        <div class="ui vertical footer segment">
+    <div class="ui center aligned container">
+        <div class="ui inverted section divider"></div>
+        &copy; 2018 <a href="/">太年轻的博客</a>,
+        Powered by <a href="https://github.com/henryhuang/hexo-theme-aloha" target="_blank">Aloha</a> and <a href="http://hexo.io/" target="_blank">Hexo</a>.
+    </div>
+</div>
+
+    </div>
+
+
+    <div class="ui small long scrolling modal" id="search-modal">
+    <div class="header">
+        <div class="ui fluid icon input">
+            <input type="text" id="search-box" placeholder="Search everything you need...">
+            <i class="search icon"></i>
+        </div>
+    </div>
+    <div class="image content">
+        <div class="description">
+            <div class="algolia-logo">
+                Powered by <img class="ui avatar image" src="/images/algolia_logo.svg">
+            </div>
+            <div id="search-results" class="ui relaxed divided list">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- scripts list from theme config.yml -->
+
+<script src="//cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+
+<script src="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch/3.18.1/algoliasearch.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch-helper-js/2.13.0/algoliasearch.helper.min.js"></script>
+
+<script src="/js/semantic-ui-algolia.js"></script>
+
+<script src="/js/aloha-events.js"></script>
+
+
+
+</body>
+</html>
